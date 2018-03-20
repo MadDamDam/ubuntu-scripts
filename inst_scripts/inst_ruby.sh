@@ -4,9 +4,11 @@ sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libre
 sudo apt install git -y
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
 source ~/.profile
 ~/.rbenv/bin/rbenv init
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 source ~/.profile
 sudo apt install curl -y
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
